@@ -58,6 +58,14 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${jetbrainsMono.variable}`}
     >
+      <head>
+        {/* FontAwesome Pro Kit */}
+        <script
+          src="https://kit.fontawesome.com/1001a46e0a.js"
+          crossOrigin="anonymous"
+          async
+        />
+      </head>
       <body className="font-body antialiased">
         {children}
       </body>
