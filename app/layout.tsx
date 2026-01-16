@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
-// Inter - Clean, versatile font for both display and body
+// Inter - Clean, versatile font
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -60,10 +61,10 @@ export default function RootLayout({
     >
       <head>
         {/* FontAwesome Pro Kit */}
-        <script
+        <Script
           src="https://kit.fontawesome.com/1001a46e0a.js"
           crossOrigin="anonymous"
-          async
+          strategy="beforeInteractive"
         />
       </head>
       <body className="font-body antialiased">
