@@ -35,8 +35,8 @@ const config: Config = {
         smoke: "#a3a3a3",
       },
       fontFamily: {
-        display: ["var(--font-clash)", "system-ui", "sans-serif"],
-        body: ["var(--font-cabinet)", "system-ui", "sans-serif"],
+        display: ["var(--font-inter)", "system-ui", "sans-serif"],
+        body: ["var(--font-inter)", "system-ui", "sans-serif"],
         mono: ["var(--font-jetbrains)", "monospace"],
       },
       fontSize: {

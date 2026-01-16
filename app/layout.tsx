@@ -1,21 +1,12 @@
 import type { Metadata } from "next";
-import { Sora, DM_Sans, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-// Sora - Bold, geometric display font (similar to Clash Display)
-const sora = Sora({
+// Inter - Clean, versatile font for both display and body
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-clash",
+  variable: "--font-inter",
   display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-// DM Sans - Clean, readable body font (similar to Cabinet Grotesk)
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  variable: "--font-cabinet",
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
 });
 
 // JetBrains Mono - For code/technical elements
@@ -65,7 +56,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${sora.variable} ${dmSans.variable} ${jetbrainsMono.variable}`}
+      className={`${inter.variable} ${jetbrainsMono.variable}`}
     >
       <body className="font-body antialiased">
         {children}
